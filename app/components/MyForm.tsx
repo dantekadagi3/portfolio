@@ -2,6 +2,18 @@ export default function MyForm() {
   return (
     <div className="max-w-md mx-auto bg-[#121212] p-8 rounded-lg shadow-lg">
       <form action="" className="space-y-6">
+
+        <div className="flex flex-col">
+          <label htmlFor="subject" className="mb-2 text-sm font-medium text-gray-300">
+            Subject
+          </label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            className="bg-[#1A1A1A] border border-gray-700 text-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#00FFB3]"
+          />
+        </div>
         {/* Name */}
         <div className="flex flex-col">
           <label htmlFor="name" className="mb-2 text-sm font-medium text-gray-300">

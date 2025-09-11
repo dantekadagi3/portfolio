@@ -3,6 +3,7 @@ import AboutCard from "./components/AboutCards";
 import MyForm from "./components/MyForm";
 import ProjectCard from "./components/ProjectCard";
 import SkillsCard from "./components/SkillsCard";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -41,13 +42,12 @@ export default function Home() {
 
           <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
             {/* Profile Image */}
-            <div className="flex-shrink-0">
+            <div className="relative w-[300px] h-[300px]">
               <Image
                 src="/Dante.jpeg"
                 alt="Profile Picture"
-                width={388}
-                height={388}
-                className="w-[300px] h-[300px] rounded-full border-2 border-[#00FFB3] mx-auto md:mx-0 object-cover"
+                fill
+                className="rounded-full border-2 border-[#00FFB3] object-cover"
                 priority
               />
             </div>
@@ -71,8 +71,23 @@ export default function Home() {
                 <AboutCard value={5} description="Projects Completed" />
                 <AboutCard value={3} description="Years Experience" />
               </div>
+
+              <div>
+                <div>
+               <a
+    href="/Dante_Kadagi_CV.pdf"
+    download
+    className="mt-8 inline-block px-6 py-3 bg-[#00FFB3] text-black font-semibold rounded-lg shadow-md border-2 border-transparent hover:bg-transparent hover:text-[#00FFB3] hover:border-[#00FFB3] transition duration-300"
+  >
+    Download CV
+  </a>
             </div>
+            </div>
+            </div>
+
+            
           </div>
+          
         </div>
       </section>
 
@@ -98,14 +113,14 @@ export default function Home() {
               description="Personal portfolio built with Next.js and TailwindCSS"
               image="/portfolio.png"
               tags={["Next.js", "TailwindCSS"]}
-              link="#"
+              link="https://dantekadagi.netlify.app/"
             />
             <ProjectCard
-              title="Blog Platform"
-              description="A content-driven platform with authentication & CMS"
-              image="/e-commerce.png"
-              tags={["Next.js", "GraphQL"]}
-              link="#"
+              title="Agrilens"
+              description="An AI-powered web application for farmers to detect crop diseases early and get insights on improving crop health"
+              image="/agrilens.png"
+              tags={["Next.js", "Python","AI","ML"]}
+              link="https://agrilens-frontend.vercel.app"
             />
               <ProjectCard
               title="Blog Platform"

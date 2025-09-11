@@ -46,6 +46,7 @@ export default function ProjectCard({ title, description, image, tags, link }: P
         {/* Link */}
         <a
           href={link}
+          target='_blank'
           className="mt-4 inline-block text-[#00FFB3] font-medium hover:underline items-center gap-1"
         >
           View Project <span>→</span>
