@@ -42,16 +42,15 @@ export default function Home() {
 
           <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
             {/* Profile Image */}
-            <div className="relative w-[300px] h-[300px]">
-              <Image
-                src="/Dante.jpeg"
-                alt="Profile Picture"
-                fill
-                className="rounded-full border-2 border-[#00FFB3] object-cover"
-                priority
-              />
-            </div>
-
+           <div className="relative w-[350px] h-[350px]">
+  <Image
+    src="/Dante.jpeg"
+    alt="Profile Picture"
+    fill
+    className="rounded-full border-2 border-[#00FFB3] object-cover object-top"
+    priority
+  />
+</div>
             {/* About Text & Stats */}
             <div className="flex flex-col items-start text-left">
               <div className="mb-8">
