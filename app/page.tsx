@@ -3,7 +3,7 @@ import AboutCard from "./components/AboutCards";
 import MyForm from "./components/MyForm";
 import ProjectCard from "./components/ProjectCard";
 import SkillsCard from "./components/SkillsCard";
-import Link from "next/link";
+
 
 export default function Home() {
   return (
@@ -128,6 +128,14 @@ export default function Home() {
               tags={["Next.js", "GraphQL"]}
               link="#"
             />
+
+              <ProjectCard
+              title="Financial analysis"
+              description="Finance flow is a simple web app where the users can  upload their financial documents and have them simply brokend down for them to understand"
+              image="/finance-flow.png"
+              tags={["Next.js", "Django"]}
+              link="#"
+            />
           </div>
         </div>
       </section>
@@ -145,7 +153,7 @@ export default function Home() {
             <SkillsCard
               title="Frontend"
               icon="/frontend.png"
-              technologies={["React", "Vue.js", "Angular"]}
+              technologies={["React", "Vue.js", "Next.js", "TailwindCSS"]}
             />
             <SkillsCard
               title="Backend"
