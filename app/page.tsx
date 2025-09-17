@@ -134,7 +134,7 @@ export default function Home() {
               description="Finance flow is a simple web app where the users can  upload their financial documents and have them simply brokend down for them to understand"
               image="/finance-flow.png"
               tags={["Next.js", "Django"]}
-              link="#"
+              link="https://finance-flow-mu.vercel.app/"
             />
           </div>
         </div>
