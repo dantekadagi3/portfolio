@@ -101,11 +101,12 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard
-              title="E-Commerce Platform"
-              description="Full-stack e-commerce solution with React and Node.js"
-              image="/e-commerce.png"
-              tags={["React", "Node.js"]}
-              link="#"
+              title="Marrie Stoppes"
+              description="This is a simple prototype of the Marie Stoppes Kenya website built with Next.js .It is a simple show of what vibecoding can do and of course my awesome prompting skills"
+              image="/marrie.png"
+              tags={["Next.js", "TailwindCSS"]}
+              
+              link="https://v0-marie-stopes-website.vercel.app/"
             />
             <ProjectCard
               title="Portfolio Website"
@@ -131,7 +132,7 @@ export default function Home() {
 
               <ProjectCard
               title="Financial analysis"
-              description="Finance flow is a simple web app where the users can  upload their financial documents and have them simply brokend down for them to understand"
+              description="Finance flow is a simple web app where the users can  upload their financial documents and have them simply broken down for them to  easily understand"
               image="/finance-flow.png"
               tags={["Next.js", "Django"]}
               link="https://finance-flow-mu.vercel.app/"
