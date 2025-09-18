@@ -239,19 +239,19 @@ export default function Home() {
           {/* Social Icons */}
           <div className="flex space-x-4 mt-6">
             <a
-              href="https://github.com/"
+              href="https://github.com/dantekadagi3"
               className="bg-[#1A1A1A] p-2 rounded-md hover:bg-[#00FFB3] hover:text-black transition"
             >
               <Image src="/github.png" alt="GitHub" width={20} height={20} />
             </a>
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/dantekadagi"
               className="bg-[#1A1A1A] p-2 rounded-md hover:bg-[#00FFB3] hover:text-black transition"
             >
               <Image src="/linkedin.png" alt="LinkedIn" width={20} height={20} />
             </a>
             <a
-              href="https://twitter.com/"
+              href="https://x.com/mashy2090?t=nuLQI0W_9AXKPa4NmsjtPQ&s=09"
               className="bg-[#1A1A1A] p-2 rounded-md hover:bg-[#00FFB3] hover:text-black transition"
             >
               <Image src="/x.png" alt="Twitter" width={20} height={20} />
