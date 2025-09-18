@@ -123,10 +123,10 @@ export default function Home() {
               link="https://agrilens-frontend.vercel.app"
             />
               <ProjectCard
-              title="Blog Platform"
-              description="A content-driven platform with authentication & CMS"
-              image="/e-commerce.png"
-              tags={["Next.js", "GraphQL"]}
+              title="BookStore"
+              description="This is an simple platform for online book purchases created mainly to test the quikk API suite and how it works"
+              image="/books.png"
+              tags={["Next.js", "Supabase","Quikk" ,"in progress"]}
               link="#"
             />
 
@@ -134,7 +134,7 @@ export default function Home() {
               title="Financial analysis"
               description="Finance flow is a simple web app where the users can  upload their financial documents and have them simply broken down for them to  easily understand"
               image="/finance-flow.png"
-              tags={["Next.js", "Django"]}
+              tags={["Next.js", "Django",  "in progress"]}
               link="https://finance-flow-mu.vercel.app/"
             />
           </div>
