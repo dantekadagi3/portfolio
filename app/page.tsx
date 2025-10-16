@@ -137,6 +137,15 @@ export default function Home() {
               tags={["Next.js", "Django",  "in progress"]}
               link="https://finance-flow-mu.vercel.app/"
             />
+
+
+            <ProjectCard
+              title="itinerary tracker"
+              description="Developed a lightweight itinerary tracker leveraging PostgreSQL for data persistence and Next.js for front-end logic, showcasing practical database design and full-stack development skills."
+              image="/itenary.png"
+              tags={["Next.js", "Typescript",  "Postgres"]}
+              link="https://finance-flow-mu.vercel.app/"
+            />
           </div>
         </div>
       </section>
