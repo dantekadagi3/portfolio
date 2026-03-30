@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background:#0D1117;
+  --background: #0D1117;
   --foreground: #ffffff;
-  --main-grren:#00FFB3;
+  --main-green: #00FFB3;
 }
 
 @theme inline {
@@ -15,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0D1117;
     --foreground: #ededed;
   }
 }
@@ -24,4 +24,65 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ── Typewriter cursor ── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+  color: #00FFB3;
+  font-weight: 300;
+  margin-left: 1px;
+}
+
+/* ── Project card ── */
+.project-card {
+  background: #161B22;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #00FFB3;
+  box-shadow: 0 0 24px rgba(0, 255, 179, 0.12);
+}
+
+/* ── Experience timeline ── */
+.timeline-card {
+  background: #0D1117;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.timeline-card:hover {
+  border-color: rgba(0, 255, 179, 0.4);
+}
+
+/* ── Skill pill ── */
+.skill-pill {
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  background: #1f2937;
+  color: #00FFB3;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 255, 179, 0.2);
+}
+
+/* ── Section fade-in ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease both;
 }

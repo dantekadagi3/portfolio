@@ -9,7 +9,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("Home");
 
-  const navItems = ["Home", "About", "Projects", "Skills", "Contact"];
+  const navItems = ["Home", "About", "Experience", "Projects", "Skills", "Contact"];
 
   // Track scroll position (for header background)
   useEffect(() => {
